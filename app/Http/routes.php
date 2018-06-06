@@ -11,6 +11,7 @@
 |
 */
 
+/*
 Route::get('/', function () {
     Debugbar::error('Error!');
     Debugbar::warning('Watch out…');
@@ -19,3 +20,8 @@ Route::get('/', function () {
 });
 
 Route::get('test','Test\ServiceProviders\TestController@index');
+*/
+
+Route::get('/','StaticPagesController@home');
+Route::get('/help', 'StaticPagesController@help');
+Route::get('/about','StaticPagesController@about');
